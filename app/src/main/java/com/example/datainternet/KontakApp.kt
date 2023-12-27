@@ -1,5 +1,6 @@
 package com.example.datainternet
 
+import android.icu.text.CaseMap.Title
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -44,6 +45,16 @@ fun KontakApp(
         }
     }
 }
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun TopAppBarKontak(
+    title: String,
+    canNavigateBack: Boolean,
+    modifier: Modifier = Modifier,
+    scrollBehavior: TopAppBarScrollBehavior? = null,
+    navigateUp: () -> Unit = {}
+){}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
