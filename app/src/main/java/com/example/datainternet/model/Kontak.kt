@@ -13,4 +13,6 @@ data class Kontak(
     val alamat: String,
     @SerialName(value = "no_hp")
     val nohp: String,
+    @SerialName(value = "email")
+    val email: String,
 )

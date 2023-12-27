@@ -41,7 +41,7 @@ fun KontakApp(
                 .padding(it)
         ) {
             HomeScreen(
-                kontakUIState = homeViewModel.KontakUiState,
+                kontakUIState = homeViewModel.kontakUIState,
                 retryAction = homeViewModel::getKontak
             )
 
