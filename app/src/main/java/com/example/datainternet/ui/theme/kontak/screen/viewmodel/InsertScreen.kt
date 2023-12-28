@@ -39,5 +39,14 @@ fun FormInputSiswa(
             enabled = enabled,
             singleLine = true
         )
+
+        OutlinedTextField(
+            value = insertUiEvent.nohp,
+            onValueChange = { onValueChange(insertUiEvent.copy(nohp = it)) },
+            label = { Text("No HP") },
+            modifier = Modifier.fillMaxWidth(),
+            enabled = enabled,
+            singleLine = true
+        )
     }
 }
